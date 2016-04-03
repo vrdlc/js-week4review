@@ -1,0 +1,13 @@
+<h1>Questions For Quacks</h1>
+
+<h3>Ask away! We mostly know what we're talking about, because we're just like you: intelligent and prepared to deal with any medical emergencies that come your way!</h3>
+
+{{new-question save="save"}}
+
+<ul>
+  {{#each model.questions as |question|}}
+    {{question-tile question=question editQuestion="editQuestion" destroyQuestion="destroyQuestion"}}
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}<button class='btn btn-sm btn-danger'>About</button>{{/link-to}}

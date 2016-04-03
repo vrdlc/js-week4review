@@ -1,0 +1,39 @@
+{ "questions": [{
+  "user": "thisguy52",
+  "date": "March 31, 2016",
+  "title": "Should I scratch this?",
+  "body": "I have this thing under my arm and it itches sometimes. I have this awful urge to scratch it, but when I do, a bug pops out and bites my fingertip. What should I do? Is this serious enough to see a doctor about?",
+  "answer": "0"
+  }, {
+    "user": "burgin309",
+    "date": "April 1st, 2016",
+    "title": "URGENT please help",
+    "body": "No matter how much I eat, I'm always still hungry. My roommate thinks I might have a tapeworm. Is there a way to test for that?",
+    "answer": "2"
+    }, {
+      "user": "Phineas Gage",
+      "date": "September 13th, 1948",
+      "title": "Hole in head, doesn't hurt",
+      "body": "So, I was working with some dynamite and long story short, a tamping rod blew through my skull and out the top. Part of my brains are spilling out as I type this. Could someone call the doctor? Here is business enough for them.",
+      "answer": "1"
+      }],
+      "answers": [{
+        "user": "meowmeow13",
+        "answer": "Doctors are for schmucks. Next time that bug bites you, just grab it with tweezers and tear it out. It's not like you have important stuff in your armpit anyway.",
+        "questions": {
+          "0": true
+        }
+        }, {
+          "user": "doceddiewilliams",
+          "answer": "Sit tight! I'm on my way. I already asked your foreman where your hotel is. Try to keep the brains that fall out, I think we can put them back in.",
+          "questions": {
+            "2": true
+          }
+          }, {
+            "user": "burgin99",
+            "answer": "Man, I love burgin! I think if you have a tapeworm, feel great about it because it means you can burg forever and ever and ever.",
+            "questions": {
+              "1": true
+            }
+            }]
+          }

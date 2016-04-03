@@ -1,0 +1,24 @@
+{{#if answerForm}}
+<h1>Have an Answer?</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="user">Username</label>
+      {{input value=user id="user"}}
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date</label>
+      {{input value=date id="date"}}
+    </div>
+
+    <div class="form-group">
+      <label for="answer">Answer</label>
+      {{input value=answer id="answer"}}
+    </div>
+    <button class="btn btn-sm btn-success" {{action 'submitAnswer'}}>Submit Answer</button>
+  </form>
+</div>
+{{else}}
+<button class="btn btn-sm btn-success" {{action 'showAnswerForm'}}>Have an answer?</button>
+{{/if}}

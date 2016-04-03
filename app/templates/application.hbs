@@ -1,3 +1,31 @@
-<h2 id="title">Welcome to Ember</h2>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
 
-{{outlet}}
+        {{#bs-dropdown}}
+        {{#bs-dropdown-button type="button" class="navbar-toggle collapsed"}}
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        {{/bs-dropdown-button}}
+        {{#bs-dropdown-menu}}
+        <li>{{link-to 'Home' 'index'}}</li>
+        <li>{{link-to 'About' 'about' }}</li>
+        {{/bs-dropdown-menu}}
+        {{/bs-dropdown}}
+
+      {{ link-to 'Quacks' 'index' class="navbar-brand"}}
+    </div>
+
+    <div class="collapse navbar-collapse" id="menu-collapse">
+      <ul class="nav navbar-nav">
+        <li>{{link-to 'Home' 'index'}}</li>
+        <li>{{link-to 'About' 'about' }}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  {{outlet}}
+</div>
