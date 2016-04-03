@@ -1,7 +1,11 @@
 # Js-week3review
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+When complete, this program will create a forum for users to ask medical questions that are important enough to talk about but not important enough to see a real doctor about. 
+
+##Known Bugs
+
+The Edit Question function throws "cannot read property 'set' of undefined", even though I think I have defined "question".
+The Answer Question button saves information to the database, but doesn't link the answer to a question, which means the answers don't show on the question page. 
 
 ## Prerequisites
 
