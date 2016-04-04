@@ -21,7 +21,7 @@
         <label for="body">Body</label>
         {{#bs-textarea value=body id="body" placeholder=question.body}}{{/bs-textarea}}
       </div>
-    <button {{action 'update'}}>Update</button>
+    <button {{action 'update' question}}>Update</button>
   </form>
 </div>
   {{else}}
