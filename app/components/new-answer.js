@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     showAnswerForm() {
       this.set('answerForm', true);
     },
-    submitAnswer() {
+    save() {
       var params = {
         user: this.get('user'),
         date: this.get('date'),
