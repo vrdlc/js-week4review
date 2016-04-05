@@ -1,21 +1,18 @@
 <h1 class="titletext">{{question.title}}</h1>
 <h4 class="usertext">{{question.user}}</h4>
 <h5 class="datetext">{{question.date}}</h5>
-<h4 class="bodytext">{{question.body}}</h4>
+<h3 class="bodytext">{{question.body}}</h3>
 
 <!-- {{update-question question=model update="update"}} -->
 
-{{answer.user}}<br>
-{{answer.answer}}
-
 <button class="btn btn-sm btn-danger" {{action 'delete' question}}>Delete</button>
 
-  <h4>Answers: </h4>
-    {{#each question.answer.name as |answer|}}
-    <h3>{{answer.user}}</h3>
-    <h4>{{answer.date}}</h4>
-    <h3>{{answer.body}}</h3>
+  <h2>Answers: </h2>
+    {{#each question.answers as |answer|}}
+    <h3>User: {{answer.user}}</h3>
+    <h4>Posted on: {{answer.date}}</h4>
+    <h4>{{answer.answer}}</h4>
+    <hr>
   {{/each}}
 
-
-<!-- {{new-answer submitAnswer="submitAnswer"}} -->
+{{new-answer question=question answer=answer submitAnswer="submitAnswer"}}

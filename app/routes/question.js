@@ -12,7 +12,7 @@ export default Ember.Route.extend({
     newAnswer.save().then(function() {
       return question.save();
     });
-    this.transitionTo('index');
+    this.transitionTo('question/:question_id');
   },
     update(question, params) {
       Object.keys(params).forEach(function(key) {
@@ -21,11 +21,11 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      this.transitionTo('index');
+      this.transitionTo('question/:question_id');
     },
     destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');
-    }, 
+    },
   }
 });

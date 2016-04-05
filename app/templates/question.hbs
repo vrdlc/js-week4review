@@ -3,5 +3,5 @@
 <h4>{{question.date}}</h4>
 <h3>{{question.body}}</h3>
 {{update-question question=model update="update"}}
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
-{{new-answer submitAnswer="submitAnswer"}}
+{{question-detail question=model submitAnswer="submitAnswer" destroyQuestion="destroyQuestion"}}
+<!-- {{new-answer question=model answer=model submitAnswer="submitAnswer"}} -->

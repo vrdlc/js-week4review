@@ -6,9 +6,6 @@ export default Ember.Component.extend({
       this.sendAction('submitAnswer', params);
     },
 
-    // update(question, params) {
-    //   this.sendAction('update', question, params); //IF I REMOVE THIS AND MOVE UPDATE-QUESTION TO QUESTION.HBS, IT WORKS. WHY?
-    // },
     delete(question) {
       if(confirm('You said you wanted help!')){
         this.sendAction('destroyQuestion', question);

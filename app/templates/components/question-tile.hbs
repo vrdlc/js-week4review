@@ -1,7 +1,2 @@
-<li>{{#link-to 'question' question.id}}{{question.title}} by {{question.user}} on {{question.date}}{{/link-to}}
-{{#if answerIsShowing}}
-  <p>{{question.answer}}</p><button class="btn btn-sm btn-warning" {{action 'answerHide'}}>Hide Answer</button>
-  {{else}}
-  <button class="btn btn-sm btn-warning" {{action 'answerShow'}}></button>
-  {{/if}}
+<li>{{#link-to 'question' question.id}}<h4>{{question.title}}</h4> <h5>asked by {{question.user}} on {{question.date}}</h5>{{/link-to}}
 </li>
