@@ -1,6 +1,9 @@
+<div class="extra-space">
+</div>
 {{#each bookmark.questions as |question|}}
-  {{#link-to 'question' question.id}}
-  {{question.title}}{{/link-to}} -- {{question.user}}<br>
-  {{question.body}}<hr>
-  <button class="btn btn-xs btn-warning" {{action 'removeBookmark' question}}>Remove from Bookmarks</button>
+{{#link-to 'question' question.id}}
+{{question.title}}{{/link-to}} -- {{question.user}}<br>
+{{question.body}}
+<button class="btn btn-xs btn-warning" {{action 'removeBookmark' question}}>Remove from Bookmarks</button>
+<hr>
 {{/each}}
