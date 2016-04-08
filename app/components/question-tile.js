@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   answerIsShowing: false,
+
   actions: {
     answerShow: function() {
       this.set('answerIsShowing', true);

@@ -1,4 +1,5 @@
 {{#each bookmark.questions as |question|}}
   {{#link-to 'question' question.id}}
-  {{question.title}} -- {{question.user}}{{/link-to}}
+  {{question.title}}{{/link-to}} -- {{question.user}}<br>
+  {{question.body}}<hr>
 {{/each}}
