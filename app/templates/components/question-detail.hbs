@@ -2,7 +2,7 @@
 <h4 class="usertext">{{question.user}}</h4>
 <h5 class="datetext">{{question.date}}</h5>
 <h3 class="bodytext">{{question.body}}</h3>
-
+<button class="btn btn-xs btn-success" {{action 'addToBookmarks' question}}>Bookmark</button>
 <!-- {{update-question question=model update="update"}} -->
 
 <button class="btn btn-sm btn-danger" {{action 'delete' question}}>Delete</button>
