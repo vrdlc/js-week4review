@@ -10,8 +10,9 @@ export default Ember.Component.extend({
     save() {
       var params = {
         user: this.get('user'),
-        date: this.get('date') ? this.get('date') : moment().format('MMMM Do YYYY, h:mm'),
+        date: this.get('date') ? this.get('date') : moment().format('MMMM Do YYYY, h:mm a'),
         answer: this.get('answer'),
+        rating: parseInt(this.get('rating')),
         question: this.get('question')
       };
       this.set('answerForm', false);

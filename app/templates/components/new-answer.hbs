@@ -8,8 +8,19 @@
     </div>
 
     <div class="form-group">
+      <label for="rating">Rate this Question</label>
+      {{#x-select value=rating}}
+      {{#x-option value=1}}<span>&bigstar;&star;&star;&star;&star;</span>{{/x-option}}
+      {{#x-option value=2}}<span>&bigstar;&bigstar;&star;&star;&star;</span>{{/x-option}}
+      {{#x-option value=3}}<span>&bigstar;&bigstar;&bigstar;&star;&star;</span>{{/x-option}}
+      {{#x-option value=4}}<span>&bigstar;&bigstar;&bigstar;&bigstar;&star;</span>{{/x-option}}
+      {{#x-option value=5}}<span>&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</span>{{/x-option}}
+      {{/x-select}}
+    </div>
+
+    <div class="form-group">
       <label for="answer">Answer</label>
-      {{input value=answer id="answer"}}
+      {{#bs-textarea value=answer id="answer"}}{{/bs-textarea}}
     </div>
     <button class="btn btn-sm btn-success" {{action 'save'}}>Submit Answer</button>
   </form>

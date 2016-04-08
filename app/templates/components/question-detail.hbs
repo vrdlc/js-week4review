@@ -1,9 +1,10 @@
 <h1 class="titletext">{{question.title}}</h1>
 <h4 class="usertext">{{question.user}}</h4>
 <h5 class="datetext">{{question.date}}</h5>
+<h5>Overall Rating of this Question: {{averageRating}} <span>&bigstar;</span></h5>
 <h3 class="bodytext">{{question.body}}</h3>
 <button class="btn btn-xs btn-success" {{action 'addToBookmarks' question}}>Bookmark</button>
-<!-- {{update-question question=model update="update"}} -->
+
 
 <button class="btn btn-sm btn-danger" {{action 'delete' question}}>Delete</button>
 
@@ -11,6 +12,8 @@
     {{#each sortedAnswers as |answer|}}
     <h3>User: {{answer.user}}</h3>
     <h4>Posted on: {{answer.date}}</h4>
+    {{moment-from-now answer.date 'MMMM Do YYYY, h:mm a'}}
+    {{star-rating answer}}
     <h4>{{answer.answer}}</h4>
     <hr>
   {{/each}}

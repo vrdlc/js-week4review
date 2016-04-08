@@ -2,4 +2,5 @@
   {{#link-to 'question' question.id}}
   {{question.title}}{{/link-to}} -- {{question.user}}<br>
   {{question.body}}<hr>
+  <button class="btn btn-xs btn-warning" {{action 'removeBookmark' question}}>Remove from Bookmarks</button>
 {{/each}}

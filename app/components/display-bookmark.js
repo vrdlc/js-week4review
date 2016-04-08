@@ -10,4 +10,10 @@ export default Ember.Component.extend({
     }
     return total;
   }),
+
+  actions: {
+    removeBookmark(question) {
+      this.get('bookmark').remove(question);
+    }
+  }
 });
